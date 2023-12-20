@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+/* Side-Navication Bar Css*/
+.header {
+    width: 100px;
+    background-color: #0f1014;
+    height: 100%;
+    padding-top: 5%;
+    position: fixed;
+}
+
+.logo-icon {
+    width: 100%;
+}
+
+.nav-icons {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-icons i {
+    padding: 20px;
+    color: gray;
+}
+
+.nav-icons i:hover {
+    color: white;
+}
+
+/* Banner css */
+.banner {
+    margin-left: 100px;
+    width: 91vw;
+    height: 95vh;
+    position: relative;
+}
+
+.banner>img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.banner>.desc {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    row-gap: 20px;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #0f1014, 60%, transparent);
+}
+
+.rate-btn {
+    padding: 2px;
+    border: 2px solid #ffffff05;
+    background-color: #ffffff50;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.btn>.sub-btn {
+    padding: 12px 100px;
+    border-radius: 5px;
+    word-spacing: px;
+    font-size: 15px;
+    border: 2px solid #ffffff05;
+    background-color: #ffffff33;
+    color: whitesmoke;
+
+}
+
+.btn>.btn2 {
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 2px solid #ffffff05;
+    background-color: #ffffff33;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+/* POSTERS CSS*/
+.heading {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h2>span {
+    color: rgb(44, 44, 209);
+}
+
+.movies-shows {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    margin-left: 90px;
+    background-color: #0f1014;
+    ;
+    color: white;
+}
+
+.container {
+    display: flex;
+    padding: 5px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Vertical poster CSS*/
+.ver-movie-card {
+    flex: 0 0 auto;
+    width: 170px;
+    height: 220px;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.vertical-poster {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.overlay {
+    width: 170px;
+    height: 220px;
+    position: absolute;
+    padding: 10px;
+}
+
+.overlay>button {
+    padding: 3px;
+    background-color: rgb(44, 44, 209);
+    border: 2px solid rgb(44, 44, 209);
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}
+
+.poster:hover {
+    cursor: pointer;
+}
+
+.ver-movie-card:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+/* Horizontal Posetr CSS*/
+.hor-movie-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 200px;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.horizontal-poster {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.overlay1 {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster1 {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay1>p>button {
+    padding: 3px;
+    background-color: rgb(44, 44, 209);
+    border: 2px solid rgb(44, 44, 209);
+    color: aliceblue;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.overlay1>i {
+    margin-bottom: 70px;
+    margin-left: 30px;
+}
+
+.highlights p {
+    margin-top: 8px;
+}
+
+.highlights p {
+    font-weight: 540;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+.hor-movie-card:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+/* Top 10 Poster CSS*/
+.top10-movie-card {
+    flex: 0 0 auto;
+    width: 210px;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.top10-overlay {
+    width: 170px;
+    height: 220px;
+    position: absolute;
+
+}
+
+.top10-overlay>h1 {
+    font-family: sans-serif;
+    margin-top: 130px;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.top10-poster {
+    width: 200px;
+    height: 220px;
+    overflow: hidden;
+    padding: 0px 0px 0px 13px;
+    border-radius: 5px;
+}
+
+.top-10poster {
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+/* Top Team CSS */
+.hor-movie-card2 {
+    width: 500px;
+    height: 100px;
+}
+
+.hor-movie-card2>.poster2 {
+    width: 100%;
+    height: 100%;
+}
+
+.video-card-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.video-card {
+    position: relative;
+    max-width: calc(100%/5 - 20px);
+    width: calc(100%/5 - 20px);
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.video-card-image,
+.card-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-video {
+    position: absolute;
+}
+
+.video-card:hover .video-card-image:hover {
+    display: none;
+}
+
+/* Search section CSS*/
+.search-section {
+    width: 92.5%;
+    height: 100%;
+    margin-left: 100px;
+    background-color: #0f1014;
+    color: white;
+    padding: 20px;
+}
+
+.search-bar {
+    width: 99%;
+    height: 80px;
+    padding: 10px;
+
+}
+
+.search-bar-inside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #252833;
+}
+
+.Search-icon {
+    padding: 15px;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+    text-indent: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #252833;
+}
+
+.movie-section {
+    width: 99%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+.movie-card {
+    position: relative;
+    width: 170px;
+    height: 220px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.poster00 {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+/* Popular concept */
+.hor-movie-card1 {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 150px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.overlay2 {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+    opacity: 0.2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lang-overlay {
+    position: absolute;
+    margin: 70px 0 0 25px;
+    color: rgb(255, 252, 252);
+}
+
+.gen-overlay {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+    opacity: 0.2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gen-lang {
+    padding-top: 25px;
+}
+
+/* Button section CSS*/
+.pre-btn,
+.nxt-btn {
+    border: none;
+    margin-top: 15px;
+    width: 5vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #0f1014 100%);
+    cursor: pointer;
+    z-index: 8;
+    opacity: 0;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+    margin-left: 10px;
+
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.5;
+    width: 20px;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 0.7;
+}
+
+.nxt-btn:hover,
+.pre-btn:hover {
+    opacity: 1;
+}
